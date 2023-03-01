@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Prata&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<title>Conquest</title>
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<header class = "header row space-between">
+				<div class="header__logo row space-between">
+					<img class="header__logo-image" src="icons/Ellipse.svg">
+					<p class="header__logo-text">CONQUEST</p>
+				</div>
+				<div class="header__nav">
+					<ul class="row">
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__account">
+					<ul class="row space-between">
+						<li><button><img src="icons/Vector.svg" alt="search"></button></li>
+						<li class="header__account-heart"><button><img src="icons/heart.svg" alt="favorite goods"></button></li>
+						<li><button><img src="icons/basket.svg" alt="basket"></button></li>
+					</ul>
+				</div>
+			</header>
+			<main>
+				<div class="first-section">
+					<div class="first-section__content">
+						<h1 class="first-section__title">Весна/Лето 2019</h1>
+						<h2 class="first-section__subtitle">Коллекция</h2>
+						<p class="first-section__paragraph">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+						<button class="first-section__button button">Смотреть каталог</button>
+					</div>
+					<div class="first-section__img-content">
+						<img class="first-section__img" src="img/watch_main.png" alt="main__img">
+						<div class="first-section__first-metric metric">
+							<p class="metric__paragraph">22 000</p>
+							<img class="metric__ruble" src="icons/ruble.svg">
+						</div>
+						<div class="first-section__second-metric metric">
+							<p class="metric__paragraph">28 мм диаметр</p>
+						</div>
+					</div>
+					<img class = "first-section__background-img" src="img/Ellipse.png">
+				</div>
+				<div class="second-section">
+					<h3 class="second-section__title section-title">Популярные модели</h3>
+					<button class="second-section__watch-all-button">Смотреть все</button>
+					<div class="cards-container">
+						<div class="first-item-card item-card">
+							<p class="item-card__product-name">RADO</p>
+							<div class="item-card__product-price-container">
+								<p class="item-card__product-price">65 300</p>
+								<img class="item-card__product-price-ruble" src="icons/ruble.svg">
+							</div>
+							<img class="item-card__product-image" src="img/watch_1.jpg" alt="watch_1">
+							<a class="item-card__read-more-link" href="">Подробнее</a>
+						</div>
+						<div class="second-item-card item-card">
+							<p class="item-card__product-name">BVLGARI</p>
+							<div class="item-card__product-price-container">
+								<p class="item-card__product-price">81 700</p>
+								<img class="item-card__product-price-ruble" src="icons/ruble.svg">
+							</div>
+							<img class="item-card__product-image" src="img/watch_2.jpg" alt="watch_2">
+							<a class="item-card__read-more-link" href="">Подробнее</a>
+						</div>
+						<div class="third-item-card item-card">
+							<p class="item-card__product-name">BVLGARI</p>
+							<div class="item-card__product-price-container">
+								<p class="item-card__product-price">72 700</p>
+								<img class="item-card__product-price-ruble" src="icons/ruble.svg">
+							</div>
+							<img class="item-card__product-image" src="img/watch_3.jpg" alt="watch_3">
+							<a class="item-card__read-more-link" href="">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="third-section">
+						<img  class = "background-banner-1"src="img/background_banner_1.png">
+						<div class="white-space"></div>
+						<img class="background-banner-2" src="img/lines_banner.png">
+					<div class="banner-slider swiper">
+						<div class="banner-slider__wrapper swiper-wrapper">
+							<div class="banner-slider__slide swiper-slide">
+								<div class="banner-slider__content">
+									<img class="banner-slider__image" src="img/slide1.jpg" alt="slider-pic">
+									<div class="banner-slider__right-side">
+										<h4 class="banner-slider__title section-title">Подлинное качество</h4>
+										<p class="banner-slider__paragraph">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+										<button class="banner-slider__button button">Смотреть каталог</button>
+									</div>
+									<div class="slide-show-container">
+										<div class="custom-button-next">
+											<button><img class="custom-button-next-img" src="icons/arrow_right.svg"></button>
+										</div>
+										<div class="custom-button-prev">
+											<button><img class = "custom-button-prev-img"src="icons/arrow_left.svg"></button>
+										</div>
+
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<div class="banner-slider__slide swiper-slide">
+								<div class="banner-slider__content">
+									<img class="banner-slider__image" src="img/slide2.jpg" alt="slider-pic">
+									<div class="banner-slider__right-side">
+										<h4 class="banner-slider__title section-title">Подлинное качество</h4>
+										<p class="banner-slider__paragraph">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+										<button class="banner-slider__button button">Смотреть каталог</button>
+									</div>
+									<div class="slide-show-container">
+										<div class="custom-button-next">
+											<button><img src="icons/arrow_right.svg"></button>
+										</div>
+										<div class="custom-button-prev">
+											<button><img src="icons/arrow_left.svg"></button>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<div class="banner-slider__slide swiper-slide">
+								<div class="banner-slider__content">
+									<img class="banner-slider__image" src="img/slide3.jpg" alt="slider-pic">
+									<div class="banner-slider__right-side">
+										<h4 class="banner-slider__title section-title">Подлинное качество</h4>
+										<p class="banner-slider__paragraph">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+										<button class="banner-slider__button button">Смотреть каталог</button>
+									</div>
+									<div class="slide-show-container">
+										<div class="custom-button-next">
+											<button><img src="icons/arrow_right.svg"></button>
+										</div>
+										<div class="custom-button-prev">
+											<button><img src="icons/arrow_left.svg"></button>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fourth-section">
+					<div class="fourth-section__left-side">
+						<h5 class="fourth-section__title section-title">Следите за нашими новостями</h5>
+						<p class="fourth-section__paragraph">Подписывайтесь на <span class="text-span">@conquest_watch</span> в соцсетях и узнавайте о новинках и акциях первыми.</p>
+						<ul class="fourth-section__social-networks-container">
+							<li><a class="icon-item" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a class="icon-item" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a class="icon-item" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="fourth-section__right-side">
+						<div class="fourth-section__images-container">
+							<img class="fourth-section__photo-1" src="img/photo_1.jpg" alt="photo_1">
+							<img class = "fourth-section__photo-2" src="img/photo_2.jpg" alt="photo_2">
+						</div>
+						<img class ="fourth-section__photo-3" src="img/photo_3.jpg" alt="photo_3">
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<footer>
+		<div class="footer__container container">
+			<div class="footer-nav">
+				<div class="footer__contacts contacts">
+					<div class="contacts__logo row space-between">
+						<img class="contacts__logo-image" src="icons/footer-logo.svg">
+						<p class="contacts__logo-text">CONQUEST</p>
+					</div>
+					<ul class="contacts__info">
+						<li class="contacts__number">8 (499) 450-47-97</li>
+						<li class="contacts__email">info@conquest.watch.ru</li>
+					</ul>
+				</div>
+				<div class="footer__about about">
+					<h6 class="about__title footer-title">о компании</h6>
+					<ul class="footer-nav-list">
+						<li><a href="#">Наши магазины</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Сертификаты</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</div>
+				<div class="footer__info-for-customers info-for-customers">
+					<h6 class="info-for-customers__title footer-title">покупателям</h6>
+					<ul class="footer-nav-list">
+						<li><a href="#">Каталог товаров</a></li>
+						<li><a href="#">Как заказать?</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Корпоративным клиентам</a></li>
+					</ul>
+				</div>
+				<div class="footer__delivery delivery">
+					<h6 class="delivery__title footer-title">оплата и доставка</h6>
+					<ul class="footer-nav-list">
+						<li><a href="#">Способы оплаты</a></li>
+						<li><a href="#">Время доставки</a></li>
+						<li><a href="#">Гарантии и ремонт</a></li>
+						<li><a href="#">Возврат и компенсация</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/d6f451a1d2.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+//font-family: 'Playfair Display', serif
+// font-family: 'Roboto', sans-serif
+*
+	box-sizing: border-box
+
+html, body
+	color: #555248
+	height: 100%
+
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+
+.wrapper
+	min-height: 100%
+
+.row
+	display: flex
+.space-between
+	justify-content: space-between
+
+//HEADER
+
+.header
+	padding-top: 31px
+	position: sticky
+	top: 0
+	margin-bottom: 30px
+	background-color: #fff
+	z-index: 100
+	&__logo
+		justify-content: center
+		align-content: center
+	&__logo-image
+		width: 20px
+		height: 20px
+		display: flex
+		align-self: center
+	&__logo-text
+		font-family: 'Playfair Display', serif
+		font-style: normal
+		font-weight: 400
+		font-size: 12px
+		line-height: 1.33
+		letter-spacing: 0.14em
+		display: flex
+		align-self: center
+	&__nav li
+		font-family: 'Roboto', sans-serif
+		font-style: normal
+		font-weight: 400
+		font-size: 14px
+		line-height: 1.14
+		margin-right: 65px
+		&:last-child
+			margin-right: 0
+	&__nav a 
+		color: #555248
+		text-decoration: none
+	&__account ul
+		width: 99px
+		position: relative
+	&__account-heart
+		top: -4px
+		padding-left: 40px
+		position: absolute
+	&__account button
+		border: none
+		background: none
+		padding: 0
+		margin: 0
+		z-index: 100
+		position: relative
+
+// FIRST-SECTION
+
+.first-section
+	display: flex
+	padding-left: 85px
+	padding-right: 20px
+	position: relative
+	padding-bottom: 20px
+	&__content
+		max-width: 343px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-content: center
+		margin-right: 150px
+	&__title
+		font-family: 'Playfair Display', serif
+		font-style: normal
+		font-weight: 400
+		font-size: 45px
+		line-height: 1.33
+		margin-bottom: 16px
+		color: #1B1A17
+		position: relative
+		&::before
+			display: block
+			content: ""
+			height: 1px
+			background-color: #8B8371
+			position: absolute
+			left: -20%
+			top: 50%
+			width: 50px
+
+	&__subtitle
+		font-family: 'Playfair Display', serif
+		font-style: normal
+		font-weight: 400
+		font-size: 30px
+		line-height: 1.33
+		color: #1B1A17
+		margin-bottom: 39px
+	&__paragraph
+		font-family: 'Roboto', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 1.5
+		color: rgba(27, 26, 23, 0.82)
+		max-width: 258px
+		margin-bottom: 64px
+	&__button
+		background: #444240
+	&__img-content
+		display: flex
+		position: relative
+	&__img
+		width: 502.63px
+		height: 804.25px
+	&__first-metric
+		order: -1
+		position: absolute
+		top: 18%
+		left: -10%
+		width: 75px
+		display: flex
+		&::after
+			display: block
+			content: ""
+			height: 1px
+			background-color: #8B8371
+			position: absolute
+			left: 120%
+			top: 50%
+			width: 50px
+	&__first-metric p
+		margin-right: 7px
+	&__first-metric img
+		display: flex
+		width: 9.6px
+		padding-bottom: 6px
+	&__second-metric
+		position: absolute
+		bottom: 17%
+		right: -10%
+		&::before
+			display: block
+			content: ""
+			height: 1px
+			background-color: #8B8371
+			position: absolute
+			left: -60%
+			top: 50%
+			width: 50px
+	&__background-img
+		position: absolute
+		width: 496px
+		left: 377px
+		top: 6px
+		z-index: -1
+
+.button
+	width: 205px
+	height: 64px
+	border: none
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 500
+	font-size: 12px
+	line-height: 14px
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	color: #FFFFFF
+
+.metric
+	&__paragraph
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 1.38
+		color: #1B1A17
+		display: inline-block
+		font-family: 'Prata', serif
+
+// SECOND-SECTION
+
+.second-section
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-bottom: 123px
+	&__title
+		text-align: center
+		margin-bottom: 10px
+	&__watch-all-button
+		font-family: 'Roboto', sans-serif
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 1.19
+		color: #444240
+		border: none
+		background: transparent
+		margin-left: auto
+		margin-bottom: 80px
+		&:after
+			margin-top: 8px
+			opacity: 0
+			display: block
+			content: ""
+			width: 100%
+			height: 1px
+			background-color: #C4C0B6
+			transition: all .2s ease-in
+		&:hover::after
+			margin-top: 8px
+			left: 0
+			bottom: -5px
+			display: block
+			content: ""
+			width: 100%
+			height: 1px
+			background-color: #C4C0B6
+			opacity: 1
+
+.section-title
+	font-family: 'Playfair Display', serif
+	font-style: normal
+	font-weight: 400
+	font-size: 32px
+	line-height: 1.34
+	color: #1B1A17
+
+.cards-container
+	display: flex
+	width: 100%
+	margin-left: 28px
+	margin-right: 21px
+
+.item-card
+	max-width: 316px
+	margin-right: 91px
+	&:last-child
+		margin-right: 0
+	&__product-name
+		font-family: 'Playfair Display', serif
+		font-style: normal
+		font-weight: 700
+		font-size: 14px
+		line-height: 1.71
+		letter-spacing: 0.03em
+		color: rgba(27, 26, 23, 0.82)
+		margin-bottom: 10px
+	&__product-price-container
+		display: flex
+	&__product-price
+		font-family: 'Prata', serif
+		font-style: normal
+		font-weight: 400
+		font-size: 12px
+		line-height: 16px
+		color: rgba(27, 26, 23, 0.82)
+		margin-right: 4px
+	&__product-price-ruble
+			width: 7.38px
+			height: 10px
+			margin-top: 2px
+	&__product-image
+		width: 313px
+		height: 313px
+		margin-bottom: 19px
+	&__read-more-link
+		text-decoration: none
+		font-family: 'Playfair Display', serif
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 1.31
+		color: #1B1A17
+		position: relative
+		padding-left: 52px
+		&::before
+			display: block
+			content: ""
+			height: 1px
+			background-color: #8B8371
+			position: absolute
+			left: 4px
+			top: 50%
+			width: 30px
+
+// THIRD-SECTION - Slider
+.third-section
+	position: relative
+	width: 100%
+	height: 100%
+	overflow: hidden
+	margin-bottom: 81px
+.banner-slider
+	&__content
+		display: flex
+		height: 519px
+		width: 100%
+	&__image
+		width: 521px
+		height: 414px
+		align-self: center
+		margin-left: 123px
+		margin-right: 70px
+	&__right-side
+		align-self: center
+		display: flex
+		flex-direction: column
+		max-width: 376px
+	&__title
+		padding-bottom: 38px
+	&__paragraph
+		font-family: 'Roboto', sans-serif
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 24px
+		color: #444240
+		margin-bottom: 45px
+	&__button
+		background-color:#D4B098
+
+.swiper-pagination-total
+	display: none
+
+.custom-button-next button
+	width: 20px
+	height: 20px
+	bottom: 9px
+	position: absolute
+	right: 555px
+	border: none
+	background-color: transparent
+	z-index: 100
+.custom-button-prev button
+	position: absolute
+	left: 555px
+	width: 20px
+	height: 20px
+	bottom: 9px
+	border: none
+	background-color: transparent
+	z-index: 100
+
+.background-banner-1
+	position: absolute
+	left: -50px
+.white-space
+	position: absolute
+	width: 321px
+	height: 40px
+	background-color: white
+	top: 0
+	left: 150px
+.background-banner-2
+	position: absolute
+	right: -120px
+
+// FOURTH-SECTION - Slider
+.fourth-section
+	display: flex
+	align-items: center
+	margin-bottom: 90px
+	&__left-side
+		max-width: 471px
+		margin-right: 70px
+	&__title
+		margin-bottom: 40px
+	&__paragraph
+		font-family: 'Roboto', sans-serif
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 27px
+		color: #444240
+		width: 376px
+		margin-bottom: 118.87px
+	&__social-networks-container
+		display: flex 
+	&__social-networks-container li
+		margin-right: 18px
+		&:last-child
+			margin-right: 0
+	&__right-side
+		max-width: 712px
+		display: flex
+	&__images-container
+		display: flex
+		flex-direction: column
+		max-width: 242px
+		height: 460px
+		margin-right: 10px
+	&__photo-1
+		width: 242px
+		height: 228px
+		margin-bottom: 10px
+	&__photo-2
+		width: 242px
+		height: 222px
+
+i
+	font-size: 24px
+
+.icon-item
+	color: #5C5C50
+.text-span
+	font-weight: 700
+
+// FOOTER
+
+footer
+	width: 100%
+	height: 275px
+	background: #444240
+	font-family: 'Roboto', sans-serif
+	font-style: normal
+	font-weight: 400
+	font-size: 12px
+	line-height: 14px
+	color: rgba(255, 255, 255, 0.75)
+
+
+.footer-nav
+	height: 275px
+	display: flex
+	justify-content: space-around
+	padding-top: 79px
+
+.contacts
+	&__logo
+		justify-content: center
+		align-content: center
+		margin-bottom: 22.98px
+	&__logo-image
+		width: 20px
+		height: 20px
+		margin-right: 2px
+	&__logo-text
+		font-family: 'Playfair Display', serif
+		font-style: normal
+		font-weight: 700
+		font-size: 14px
+		line-height: 1.35
+		letter-spacing: 0.14em
+		color: #FFFFFF
+	&__number
+		margin-bottom: 15px
+
+.footer-title
+	font-family: 'Roboto', sans-serif
+	font-style: normal
+	font-weight: 700
+	font-size: 14px
+	line-height: 1.14
+	letter-spacing: 0.07em
+	text-transform: uppercase
+	color: #FFFFFF
+	margin-bottom: 33px
+
+.footer-nav-list li 
+	margin-bottom: 15px
+	&:last-child
+		margin-bottom: 0
+
+.footer-nav-list li a
+	color: rgba(255, 255, 255, 0.75)
+	text-decoration: none
+
